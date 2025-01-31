@@ -30,7 +30,6 @@
 
 1. Клонируй репозиторий:
 
-   ```bash
    git clone https://github.com/yourusername/django-yandexgpt-api.git
    cd django-yandexgpt-api
 
@@ -39,17 +38,14 @@
 ## Установите зависимости
 
 Для начала установите все необходимые зависимости из файла `requirements.txt`:
-      ```bash
-      pip install -r requirements.txt
+   - pip install -r requirements.txt
 
 ## Создание файла `.env` и добавление ключей от Yandex API
 
 В корневой директории проекта создайте файл `.env` и добавьте в него свои ключи от Yandex API:
-
-      ```env
-      YANDEX_SEARCH_API=your_yandex_search_api_key
-      YANDEX_GPT_API=your_yandex_gpt_api_key
-      FOLDER_ID=your_yandex_folder_id
+   -  YANDEX_SEARCH_API=your_yandex_search_api_key
+   -  YANDEX_GPT_API=your_yandex_gpt_api_key
+   -   OLDER_ID=your_yandex_folder_id
 
 ## Примените миграции (если необходимо):
 
@@ -62,21 +58,22 @@
 # Тестирование API
 ## Чтобы протестировать API, отправь POST запрос на эндпоинт /handle_request/ с таким JSON телом:
 
+```json
 {
-  "query": "Какая столица Франции?"
+  "query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород",
+  "id": 1
 }
+
 
 Ответ:
 
 {
   "id": 1,
-  "answer": 42,
-  "reasoning": "Ответ сгенерирован YandexGPT.",
+  "answer": 1,
+  "reasoning": "Из информации на сайте",
   "sources": [
-    "https://yandex.ru",
-    "https://ya.ru"
+    "https://itmo.ru/ru/",
+    "https://abit.itmo.ru/"
   ]
 }
 
-## Лицензия
-- Этот проект лицензирован по лицензии MIT — подробности см. в файле LICENSE.

@@ -39,18 +39,17 @@
 ## Установите зависимости
 
 Для начала установите все необходимые зависимости из файла `requirements.txt`:
-
-   ```bash
-   pip install -r requirements.txt
+      ```bash
+      pip install -r requirements.txt
 
 ## Создание файла `.env` и добавление ключей от Yandex API
 
 В корневой директории проекта создайте файл `.env` и добавьте в него свои ключи от Yandex API:
 
-```env
-YANDEX_SEARCH_API=your_yandex_search_api_key
-YANDEX_GPT_API=your_yandex_gpt_api_key
-FOLDER_ID=your_yandex_folder_id
+      ```env
+      YANDEX_SEARCH_API=your_yandex_search_api_key
+      YANDEX_GPT_API=your_yandex_gpt_api_key
+      FOLDER_ID=your_yandex_folder_id
 
 ## Примените миграции (если необходимо):
 

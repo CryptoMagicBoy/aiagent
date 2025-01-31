@@ -30,8 +30,8 @@
 
 1. Клонируй репозиторий:
 
-   git clone https://github.com/yourusername/django-yandexgpt-api.git
-   cd django-yandexgpt-api
+   git clone https://github.com/CryptoMagicBoy/aiagent.git
+   cd aiagent
 
 # Установка и настройка проекта
 
@@ -45,7 +45,7 @@
 В корневой директории проекта создайте файл `.env` и добавьте в него свои ключи от Yandex API:
    -  YANDEX_SEARCH_API=your_yandex_search_api_key
    -  YANDEX_GPT_API=your_yandex_gpt_api_key
-   -   OLDER_ID=your_yandex_folder_id
+   -  LDER_ID=your_yandex_folder_id
 
 ## Примените миграции (если необходимо):
 

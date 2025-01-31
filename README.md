@@ -43,11 +43,14 @@
 ```bash
 pip install -r requirements.txt
 
-## Создай файл .env в корневой директории проекта и добавь свои ключи от Yandex API:
+## Создание файла `.env` и добавление ключей от Yandex API
 
-- YANDEX_SEARCH_API=your_yandex_search_api_key
-- YANDEX_GPT_API=your_yandex_gpt_api_key
-- FOLDER_ID=your_yandex_folder_id
+В корневой директории проекта создайте файл `.env` и добавьте в него свои ключи от Yandex API:
+
+```env
+YANDEX_SEARCH_API=your_yandex_search_api_key
+YANDEX_GPT_API=your_yandex_gpt_api_key
+FOLDER_ID=your_yandex_folder_id
 
 ## Примените миграции (если необходимо):
 

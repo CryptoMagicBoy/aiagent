@@ -40,8 +40,8 @@
 
 Для начала установите все необходимые зависимости из файла `requirements.txt`:
 
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ## Создание файла `.env` и добавление ключей от Yandex API
 
